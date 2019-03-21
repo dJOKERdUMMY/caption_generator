@@ -1,4 +1,4 @@
-import cPickle as pickle
+import _pickle as pickle
 import caption_generator
 import numpy as np
 from keras.preprocessing import sequence

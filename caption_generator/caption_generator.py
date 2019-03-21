@@ -6,7 +6,7 @@ from keras.models import Sequential
 from keras.layers import LSTM, Embedding, TimeDistributed, Dense, RepeatVector, Merge, Activation, Flatten
 from keras.preprocessing import image, sequence
 from keras.callbacks import ModelCheckpoint
-import cPickle as pickle
+import _pickle as pickle
 
 EMBEDDING_DIM = 128
 
