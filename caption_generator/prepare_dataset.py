@@ -1,6 +1,6 @@
 import _pickle as pickle
 from keras_preprocessing import image
-from keras_applications.vgg16 import VGG16
+from keras.applications.vgg16 import VGG16
 import numpy as np
 from keras.applications.imagenet_utils import preprocess_input
 
@@ -29,7 +29,7 @@ def get_encoding(model, img):
     return pred
 
 def prepare_dataset(no_imgs = -1):
-    f_train_images = open('Flicker8k_text/Flickr_8k.trainImages.txt','r')
+    f_train_images = open('Flickr8k_text/Flickr_8k.trainImages.txt','r')
     train_imgs = f_train_images.read().strip().split('\n') if no_imgs == -1 else f_train_images.read().strip().split('\n')[:no_imgs]
     f_train_images.close()
 
